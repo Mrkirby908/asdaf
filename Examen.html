@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 5 - Sitio Seguro y Responsable</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #232526 0%, #3a7bd5 100%);
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column; /* Cambia a columna para header/nav/main */
+      max-width: 1400px;
+      margin: 40px auto;
+      gap: 32px;
+    }
+    nav {
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      color: white;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+      border-radius: 32px;
+      padding: 18px 32px;
+      display: flex;
+      flex-direction: row; /* Cambia a horizontal */
+      align-items: center;
+      gap: 18px;
+      justify-content: center;
+      position: static;
+      height: auto;
+      margin-bottom: 24px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 24px;
+      background: rgba(58,123,213,0.22);
+      font-weight: 600;
+      font-size: 1.08em;
+      transition: background 0.3s, transform 0.3s, color 0.3s, box-shadow 0.3s;
+      text-shadow: 2px 2px 8px #00000055;
+      box-shadow: 0 2px 8px #3a7bd533;
+      border: 1.5px solid transparent;
+      text-align: center;
+      margin-bottom: 0; /* Elimina el margen inferior */
+    }
+    nav a:hover {
+      background: #00d2ff;
+      color: #232526;
+      transform: translateY(-2px) scale(1.07);
+      text-shadow: 2px 2px 12px #00d2ff88;
+      border: 1.5px solid #3a7bd5;
+      box-shadow: 0 4px 16px #00d2ff44;
+    }
+    main {
+      flex: 1;
+      background: linear-gradient(90deg, #f8fafc 0%, #e2eafc 100%);
+      box-shadow: 0 2px 16px rgba(58,123,213,0.08);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    section {
+      background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+      box-shadow: 0 2px 12px #a1c4fd44;
+      margin-bottom: 24px;
+      border-radius: 16px;
+    }
+    section h2, aside h3 {
+      text-shadow: 1px 1px 8px #3a7bd544;
+      color: #2a4d7b;
+      font-size: 1.35em;
+      margin-bottom: 10px;
+    }
+    article, aside {
+      text-shadow: 1px 1px 6px #00000022;
+    }
+    aside {
+      background: linear-gradient(90deg, #89f7fe 0%, #4b92f7 100%);
+      color: #222;
+      border-left: 6px solid #00d2ff;
+      box-shadow: 0 2px 12px #4b92f744;
+      margin-bottom: 24px;
+      border-radius: 16px;
+      padding: 16px;
+    }
+    footer {
+      background: linear-gradient(90deg, #232526 0%, #414345 100%);
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 8px #00000044;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      box-shadow: 0 -2px 12px #23252644;
+      margin: 40px auto 30px auto;
+      border-radius: 16px;
+      max-width: 1400px;
+    }
+    img {
+      border-radius: 16px;
+      box-shadow: 0 4px 24px #3a7bd544;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 3px solid #c2e9fb;
+      transition: transform 0.3s, border-color 0.3s;
+      max-width: 100%;
+      height: auto;
+    }
+    img:hover {
+      transform: scale(1.04) rotate(-2deg);
+      border-color: #00d2ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>HTML 5 - Fernando Marroquín</h1>
+      <p>Comprendiendo las etiquetas semánticas modernas</p>
+    </header>
+    <nav>
+      <a href="#ciberseguridad">Ciberseguridad</a>
+      <a href="#firewalls">Firewalls y VPNs</a>
+      <a href="#robo-identidad">Robo de Identidad</a>
+      <a href="#etica-digital">Ética Digital</a>
+      <a href="#consecuencias-legales">Consecuencias Legales</a>
+      <a href="#referencias">Referencias</a>
+    </nav>
+    <main>
+
+      <section id="ciberseguridad">
+        <article>
+          <h2>¿Qué es la ciberseguridad?</h2>
+          <p>La ciberseguridad es el conjunto de prácticas y tecnologías que protegen sistemas, redes y datos frente a amenazas digitales. Busca mantener la confidencialidad, integridad y disponibilidad de la información.</p>
+          <ul>
+            <li>Usa contraseñas fuertes y únicas.</li>
+            <li>Evita conectarte a redes Wi-Fi públicas sin protección.</li>
+            <li>Actualiza tus dispositivos regularmente.</li>
+          </ul>
+        </article>
+        <img src="imagenes/imagen1.jpg" height="200" width="250">
+      </section>
+
+      <section id="firewalls">
+        <article>
+          <h2>Firewalls, VPNs y Cifrado</h2>
+          <p><strong>Firewall:</strong> Es una barrera de seguridad que controla el tráfico que entra y sale de tu red. Puede ser físico (en routers) o digital (en software).</p>
+          <p><strong>VPN:</strong> Una Red Privada Virtual que oculta tu ubicación y cifra tu conexión. Ideal para conectarte a redes públicas.</p>
+          <p><strong>Cifrado:</strong> Convierte tu información en códigos ilegibles para protegerla. Se usa en sitios HTTPS, apps de mensajería y correos seguros.</p>
+        </article>
+        <img src="imagenes/imagen2.jpg" height="200" width="250">
+      </section>
+
+      <section id="robo-identidad">
+        <article>
+          <h2>¿Cómo prevenir el robo de identidad?</h2>
+          <p>El robo de identidad ocurre cuando alguien usa tu información personal sin permiso. Para prevenirlo:</p>
+          <ul>
+            <li>Evita publicar datos personales en redes.</li>
+            <li>Activa la verificación en dos pasos.</li>
+            <li>Revisa tus cuentas bancarias con frecuencia.</li>
+          </ul>
+        </article>
+        <img src="imagenes/imagen3.jpg" height="200" width="250">
+      </section>
+
+      <section id="etica-digital">
+        <article>
+          <h2>Ética digital y reputación en línea</h2>
+          <p>La ética digital es comportarse con respeto, responsabilidad y honestidad en internet. Nuestra reputación digital puede afectar nuestra vida personal y profesional.</p>
+          <ul>
+            <li>No compartas información falsa o dañina.</li>
+            <li>Respeta la privacidad de los demás.</li>
+            <li>Piensa antes de publicar o comentar.</li>
+          </ul>
+        </article>
+        <img src="imagenes/imagen4.jpg" height="200" width="250">
+      </section>
+
+      <section id="consecuencias-legales">
+        <article>
+          <h2>Consecuencias legales del mal uso de internet</h2>
+          <p>Usar mal internet puede traer consecuencias legales:</p>
+          <ul>
+            <li>El ciberacoso es delito en muchos países.</li>
+            <li>Hackear o acceder sin permiso a cuentas es ilegal.</li>
+            <li>Difundir contenido íntimo sin permiso es penado por la ley.</li>
+          </ul>
+        </article>
+        <img src="imagenes/imagen5.jpg" height="200" width="250">
+      </section>
+
+      <aside>
+        <h3>Reflexión personal</h3>
+        <p>Como estudiante y usuario de internet, creo que todos debemos ser conscientes de nuestras acciones en línea. Cuidar nuestra seguridad y actuar con ética es parte de ser un buen ciudadano digital. Si todos respetamos las normas, el internet puede ser un lugar más seguro para todos.</p>
+      </aside>
+
+      <section id="referencias">
+        <article>
+          <h2>Referencias</h2>
+          <ul>
+            <li>https://www.incibe.es - Instituto Nacional de Ciberseguridad</li>
+            <li>https://latam.kaspersky.com - Blog de seguridad digital</li>
+            <li>Manual de ética digital MINEDUC</li>
+            <li>Curso gratuito de ciberseguridad – Google Actívate</li>
+          </ul>
+        </article>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sitio Educativo HTML5 | Diseñado por Fernando Marroquín</p>
+    </footer>
+  </div>
+</body>
+</html>
